@@ -1,3 +1,4 @@
+@import url('./css/normalize.css');
 :root{
     --pitch_black:#000000;
     --hero_color:#dadbf1;
@@ -25,10 +26,11 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     display: flex;
     flex-direction: row;
     background-color: var(--pitch_black);
-    justify-content: space-around;
-    
+    justify-content: space-between;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
     color: var(--white_color);
-    height: 3rem;
+    height: 5rem;
     margin:0;
 
 }
@@ -41,7 +43,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     column-gap: var(--nav-column-gap);
 }
 .navbar__start{
-    font-size: 1.5rem;
+    font-size: 2.5rem;
 
 }
 .navbar__start a {
@@ -51,7 +53,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .navbar__start a i {
     height: 100%;
-    padding: 10px;
     
 }
 .navbar__start a:hover{
@@ -62,7 +63,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 
 .navbar__end{
-    font-size: 0.9rem;
+    font-size: 2.0rem;
     margin-top: auto;
     margin-bottom: auto;
 
@@ -97,7 +98,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     text-align: center;
     align-self: center;
     background-color: var(--hero_color);
-    height: 10rem;
+    height: 30rem;
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -115,14 +116,15 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   .hero__search-box:hover{
     transition: border 0.5s;
     transition-timing-function: cubic-bezier(0.43,0.54,0.12,0.42);
-    border:4px solid black;
+    border:4px solid rgb(56, 56, 56);
     border-radius: 5px 5px 5px 5px;
   }
 
   
   .hero__search-box  input {
     border: none;
-    width: 15rem;
+    width: 40rem;
+    height: 3.0rem;
     outline: none;
   }
   .hero__search-box  button {
@@ -134,3 +136,9 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     cursor: pointer;
  
   }
+.hero__heading{
+    font-size: 3.5rem;
+}
+.hero__search__button{
+    font-size: 2.5rem;
+}
